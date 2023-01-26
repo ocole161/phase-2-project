@@ -9,11 +9,19 @@ import './App.css'
 import HeaderNoSubmit from "./components/HeaderNoSubmit"
 import AdminPage from "./components/AdminPage"
 import HeaderAdmin from "./components/HeaderAdmin"
+import AdminAuth from "./components/AdminAuth"
 
 function App() {
+  const history = useHistory()
   const [specials, setSpecials] = useState([])
   const [hood, setHood] = useState("Home")
-  const history = useHistory()
+  const [search, setSearch] = useState("")
+  const [adminPage, setAdminPage] = useState(
+    <>
+      <HeaderAdmin handleHomeClick={handleHomeClick}/>
+      <AdminAuth handlePassword={handlePassword}/>
+    </>
+  )
 
   useEffect(() => {
       fetch("http://localhost:3000/specials")
@@ -61,10 +69,28 @@ function App() {
     setSpecials(updatedSpecials)
   }
 
+  function handlePassword(e) {
+    e.preventDefault()
+    if (e.target["password"].value === "admin") {
+      setAdminPage(
+        <>
+          <HeaderAdmin handleHomeClick={handleHomeClick}/>
+          <AdminPage specials={specials}/>
+        </>
+      )
+    } else {window.alert("That is not the correct password")}
+}
+
+  function handleSearch(e) {
+    setSearch(e.target.value)
+  }
+
   const specialsToShow = specials.filter(special => {
     return (hood === "Home" || special.locationNeighborhood === hood)
   }).sort((special1, special2) => {
     return special1.locationName.localeCompare(special2.locationName)
+  }).filter(special => {
+    return (special.locationName.toLowerCase().includes(search.toLowerCase()))
   })
 
   return (
@@ -83,12 +109,11 @@ function App() {
             <SpecialDetail onDeleteSpecial={onDeleteSpecial}/>
           </Route>
           <Route path="/admin">
-            <HeaderAdmin handleHomeClick={handleHomeClick}/>
-            <AdminPage specials={specials}/>
+            {adminPage}
           </Route>
           <Route exact path="/">
             <Header handleHomeClick={handleHomeClick}/>
-            <Home specials={specialsToShow} handleClick={handleClick}/>
+            <Home specials={specialsToShow} handleClick={handleClick} handleSearch={handleSearch}/>
           </Route>
         </Switch>
     </div>

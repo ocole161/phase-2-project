@@ -9,7 +9,7 @@ function HeaderNoSubmit({ handleHomeClick }) {
                 <button title={"Go to Admin Page"} className="headerButton">Admin Page</button>
             </a>
             <br></br>
-            <h2>Enter New Happy Hour Special below:</h2>
+            <h2>Submit a New Happy Hour Special:</h2>
         </div>
     </header>
     )

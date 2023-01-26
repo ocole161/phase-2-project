@@ -1,6 +1,6 @@
 import CardList from "./CardList"
 
-function Home({ specials, handleClick}) {
+function Home({ specials, handleClick, handleSearch}) {
 
     return (
         <div>
@@ -10,6 +10,8 @@ function Home({ specials, handleClick}) {
             <button onClick={handleClick} value="LoDo">LoDo</button>
             <button onClick={handleClick} value="LoHi">LoHi</button>
             <button onClick={handleClick} value="RiNo">RiNo</button>
+            <label className="largeLabel">Search: </label>
+            <input type="text" onChange={handleSearch}></input>
             <br></br>
             <CardList specials={specials} />
         </div>

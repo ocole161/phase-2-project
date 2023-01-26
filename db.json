@@ -2,13 +2,13 @@
   "specials": [
     {
       "id": 1,
-      "locationName": "Alloy Modern Thaii",
+      "locationName": "Aloy Modern Thai",
       "locationImage": "https://s3-media0.fl.yelpcdn.com/bphoto/xIPALfR5UYWAR7nKCy46pQ/o.jpg",
       "locationNeighborhood": "LoDo",
       "locationAddress": "2134 Larimer St, Denver, CO 80205",
       "locationURL": "https://www.aloymodernthai.com/",
       "hHHours": "Monday-Friday 3pm-7pm",
-      "hHSpecials": "ALL Draft and Can Beers $5 or less!\nSpecialty Cocktails $6\nALL Wine $6 Glasses & $20 Bottles\nALL Sake 1/2 off original price\n",
+      "hHSpecials": "Draft and Can Beers $5 or less\nSpecialty Cocktails $6\nWine $6 Glasses & $20 Bottles\nSake 1/2 off\n\n$3 off Appetizers",
       "needsReview": "false"
     },
     {
@@ -81,7 +81,8 @@
       "locationAddress": "1575 Boulder St., Denver, CO 80211",
       "locationURL": "https://www.postchickenandbeer.com/lohi",
       "hHHours": "Happy Hour Mon-Sat 2-5:30pm, All Day Sunday",
-      "hHSpecials": "$2 Howdy Cans\nDraft Beers 2 for 1\nPitchers 1/2 OFF\nFlights 1/2 OFF\nWell Drinks 1/2 OFF\nBeer Towers 1/2 OFF\n$5 Wine by the Glass\n$8 Ukraine Mule\n$8 House Margarita\n$10 Crowlers To-Go\n"
+      "hHSpecials": "$5 Draft Beer and Beer Flights\n$6 Wine by the Glass\n$8 Ukraine Mule\n$8 House Margarita",
+      "needsReview": "false"
     },
     {
       "id": "baa713fc-0505-4d2e-ada7-b2f540c3db39",
@@ -312,6 +313,50 @@
       "locationURL": "http://opheliasdenver.com/",
       "hHHours": "Monday-Friday 5pm-6pm",
       "hHSpecials": "$5 Select Beer\n$6 House Wine\n$7 Select Cocktails",
+      "needsReview": "false"
+    },
+    {
+      "id": "d8a2613a-7f38-4fa7-a2bc-d506723fe902",
+      "locationName": "bartaco",
+      "locationImage": "https://s3-media0.fl.yelpcdn.com/bphoto/fNEzul2RvmIfAqV3SExJkA/o.jpg",
+      "locationNeighborhood": "LoHi",
+      "locationAddress": "2001 West 32nd avenue",
+      "locationURL": "https://bartaco.com/",
+      "hHHours": "Monday-Friday 11am-6pm, Sunday-Thursday 9:30pm-Close",
+      "hHSpecials": "$4 Beer\n$6.50 Sangria and Wine\n$7 Cocktails\n",
+      "needsReview": "false"
+    },
+    {
+      "id": "24efb19d-2974-4b9a-8caf-ee9e519caac5",
+      "locationName": "The Bindery",
+      "locationImage": "https://s3-media0.fl.yelpcdn.com/bphoto/tK8mSZ7W1HiTYEK_cnOrGg/o.jpg",
+      "locationNeighborhood": "LoHi",
+      "locationAddress": "1817 Central St",
+      "locationURL": "https://thebinderydenver.com/",
+      "hHHours": "Tuesday-Saturday 3pm-5pm",
+      "hHSpecials": "$4 Beer\n$7 Wine\n$8 Liquor and a Mixer\n$10 Cocktails",
+      "needsReview": "false"
+    },
+    {
+      "id": "5fbaab77-783f-4092-970d-1255afc0010b",
+      "locationName": "Cart Driver - LoHi",
+      "locationImage": "https://s3-media0.fl.yelpcdn.com/bphoto/pxo1wud2cCLBXjbgLKSCRw/o.jpg",
+      "locationNeighborhood": "LoHi",
+      "locationAddress": "2239 West 30th Ave. Denver, CO 80211",
+      "locationURL": "https://www.cart-driver.com/lohi",
+      "hHHours": "Monday-Friday 4pm-5:30pm, Saturday-Sunday 3pm-5pm",
+      "hHSpecials": "$3.50 Montucky\n$5 Stem Cider\n$7 Dealer's Choice Cocktail, Messed up Negroni\n$7 Bubbles on Tap\n\n$8 Daisy Pizza",
+      "needsReview": "false"
+    },
+    {
+      "id": "47fee264-20e8-44f1-9135-64afe65b193f",
+      "locationName": "Cart-Driver RiNo",
+      "locationImage": "https://s3-media0.fl.yelpcdn.com/bphoto/gQE5AEYEX_mcvDJnJDimyA/o.jpg",
+      "locationNeighborhood": "RiNo",
+      "locationAddress": "2500 Larimer St  Ste 100  Denver, CO 80205",
+      "locationURL": "https://www.cart-driver.com/rino",
+      "hHHours": "Daily 3pm-5pm and 10pm-12am",
+      "hHSpecials": "Not Listed",
       "needsReview": "false"
     }
   ]

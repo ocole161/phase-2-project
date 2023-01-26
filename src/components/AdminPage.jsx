@@ -24,6 +24,7 @@ function AdminPage() {
 
     return (
         <ul className="cards">
+            <h2>Submissions/Edits to Review:</h2>
             {needsReview.map(special => {
             return (<CardReview key={special.id} special={special} onReview={onReview}/>)
             })

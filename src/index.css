@@ -48,6 +48,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   margin: 10px;
+  box-shadow: 1px 1px 7px;
 }
 button:hover {
   border-color: #646cff;
@@ -77,9 +78,11 @@ li {
   display: inline-block;
   margin: 7px;
   vertical-align:top;
+  box-shadow: 5px 5px 7px;
 }
 
 header {
+  display: flex;
   text-align: left;
 }
 
@@ -93,6 +96,10 @@ header {
   color:#e4e4e6;
   background-color: rgb(112, 112, 222);
   font-weight: bold;
+}
+
+.headerButton:hover {
+  border-color: #646cff;
 }
 
 h2 {
@@ -114,7 +121,7 @@ input {
 
 form {
   text-align: left;
-  margin-left: 400px
+  float: center
 }
 
 .specials {
@@ -123,4 +130,8 @@ form {
 
 .largeLabel {
   font-size: x-large;
+}
+
+.password {
+  margin:auto;
 }
